@@ -1,0 +1,86 @@
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #D73817;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.apresentacao-loja {
+  color: #fff;
+  text-align: center;
+}
+
+section.produtos-disponiveis {
+  background-color: #fff;
+  color: red;
+  text-align: center;
+}
+
+.produtos-disponiveis > a {
+  text-decoration: none;
+}
+
+.produtos-disponiveis > a > p:hover {
+  cursor: pointer;
+  background-color: #EE2A5F;
+}
+
+.produtos-disponiveis > a > p {
+  background-color: #8742B6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.produtos-recentes {
+  background-color: #fff;
+}
+
+.produtos-recentes > h2 {
+  font-weight: 100;
+}
+
+.navbar {
+  display: none;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.menu-toggle span {
+  background-color: #fff;
+  height: 2px;
+  width: 24px;
+  display: block;
+}
+
+.menu {
+  list-style-type: circle;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.menu  a {
+  color: #fff;
+  text-decoration: none;
+}
