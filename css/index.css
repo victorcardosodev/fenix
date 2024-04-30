@@ -10,31 +10,72 @@ header {
   color: #fff;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-section.apresentacao-loja {
-  color: #fff;
+header > h1 {
+  padding: 20px;
+  color: black;
+}
+
+header > a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.apresentacao-loja { /* aqui é o section quero que a div centralize */
   text-align: center;
+  width: 100%;
+  height: 36vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.apresentacao { /* Essa é a div que quero que centralize no section */ 
+  color: white;
+  height: auto;  
+}
+
+.apresentacao > h1 {
+  font-weight: bolder;
+}
+
+.apresentacao > h2 {
+  font-weight: lighter;
 }
 
 section.produtos-disponiveis {
-  background-color: #fff;
+  background-color: #000;
   color: red;
+  height: 50vh;
   text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.produtos-disponiveis > a {
+.produtos-disponiveis > .produtos > a {
   text-decoration: none;
 }
 
-.produtos-disponiveis > a > p:hover {
+.produtos-disponiveis > .produtos > a > p:hover {
   cursor: pointer;
   background-color: #EE2A5F;
 }
 
-.produtos-disponiveis > a > p {
+.produtos-disponiveis > .produtos > a > p {
   background-color: #8742B6;
   color: #fff;
   font-size: 14px;
@@ -45,7 +86,35 @@ section.produtos-disponiveis {
 
 .produtos-recentes {
   background-color: #fff;
+  height: 50vh;
+  text-align: center;
 }
+
+.produtos-recentes > div {
+  padding: 10px;
+}
+
+.produtos-recentes > div > ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.produtos-recentes > div > ul > li {
+  padding: 20px;
+}
+
+.produtos-recentes > div > ul > li > a {
+  color: #c36;
+  text-decoration: none;
+}
+
+.produtos-recentes > div > ul > li > a:hover {
+  color: black;
+}
+
+.produtos-recentes > div > ul > li > a > img {
+  height: 70px;
+} 
 
 .produtos-recentes > h2 {
   font-weight: 100;
@@ -65,9 +134,10 @@ section.produtos-disponiveis {
 
 .menu-toggle span {
   background-color: #fff;
-  height: 2px;
-  width: 24px;
+  height: 4px;
+  width: 37px;
   display: block;
+  border-radius: 15px;
 }
 
 .menu {
@@ -83,4 +153,41 @@ section.produtos-disponiveis {
 .menu  a {
   color: #fff;
   text-decoration: none;
+}
+
+.a-maior-variedade {
+  color: white;
+  text-align: center;
+}
+
+.a-maior-variedade > div > h2 {
+  margin: 40px;
+}
+
+.a-maior-variedade > div > p > a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 0px 1px 10px red;
+  padding: 10px;
+  margin: 20px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 4px;
+}
+
+.a-maior-variedade > div > p > a:hover {
+  background-color: white;
+  color: red;
+
+}
+
+footer {
+  background-color: #F1F1F3;
+}
+
+#wpp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
